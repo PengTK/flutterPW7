@@ -1,13 +1,13 @@
 class Planet {
   final String name;
-  final double? mass; // масса планеты (в массах Юпитера)
-  final double? radius; // радиус (в радиусах Юпитера)
-  final double? period; // орбитальный период (дни)
-  final double? semiMajorAxis; // большая полуось (а.е.)
-  final double? temperature; // температура (K)
-  final double? distanceLightYear; // расстояние до Земли (световые годы)
-  final double? hostStarMass; // масса звезды (в массах Солнца)
-  final double? hostStarTemperature; // температура звезды (K)
+  final double? mass;
+  final double? radius;
+  final double? period;
+  final double? semiMajorAxis;
+  final double? temperature;
+  final double? distanceLightYear;
+  final double? hostStarMass;
+  final double? hostStarTemperature;
 
   Planet({
     required this.name,

@@ -61,7 +61,7 @@ class _EmojiScreenState extends State<EmojiScreen> {
 
   Future<void> _deleteItem(int index) async {
     if (_history != null && index >= 0 && index < _history!.length) {
-      await _history![index].delete(); // HiveObject knows its key
+      await _history![index].delete();
       _loadHistory();
     }
   }
@@ -76,7 +76,7 @@ class _EmojiScreenState extends State<EmojiScreen> {
           children: [
             TextField(
               controller: _controller,
-              decoration: const InputDecoration(labelText: 'Название смайлика (например: smile)'),
+              decoration: const InputDecoration(labelText: 'Название смайлика на англ'),
               onSubmitted: (_) => _searchEmoji(),
             ),
             const SizedBox(height: 8),
