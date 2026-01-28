@@ -96,7 +96,7 @@ class _EmojiScreenState extends State<EmojiScreen> {
                           margin: const EdgeInsets.symmetric(vertical: 4),
                           child: ListTile(
                             title: Text('${item.character} — ${item.name}'),
-                            subtitle: Text('Unicode: ${item.unicodeName}'),
+                            subtitle: Text('Code: ${item.code}'),
                             trailing: IconButton(
                               icon: const Icon(Icons.delete, color: Colors.red),
                               onPressed: () => _deleteItem(i),

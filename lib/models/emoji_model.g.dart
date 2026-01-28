@@ -19,7 +19,7 @@ class EmojiHistoryItemAdapter extends TypeAdapter<EmojiHistoryItem> {
     return EmojiHistoryItem(
       name: fields[0] as String,
       character: fields[1] as String,
-      unicodeName: fields[2] as String,
+      code: fields[2] as String,
     );
   }
 
@@ -32,7 +32,7 @@ class EmojiHistoryItemAdapter extends TypeAdapter<EmojiHistoryItem> {
       ..writeByte(1)
       ..write(obj.character)
       ..writeByte(2)
-      ..write(obj.unicodeName);
+      ..write(obj.code);
   }
 
   @override

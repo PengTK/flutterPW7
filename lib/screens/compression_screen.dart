@@ -25,7 +25,7 @@ class ComparisonScreen extends StatelessWidget {
         itemCount: fields.length,
         itemBuilder: (context, i) {
           final (label, v1, v2) = fields[i];
-          String formatValue(double? v) => v != null ? v.toStringAsFixed(4) : '—';
+          String formatValue(double? v) => v != null ? v.toString() : '—';
           return ListTile(
             title: Text(label),
             subtitle: Text('${formatValue(v1)} vs ${formatValue(v2)}'),

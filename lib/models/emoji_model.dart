@@ -11,19 +11,19 @@ class EmojiHistoryItem extends HiveObject {
   final String character;
 
   @HiveField(2)
-  final String unicodeName;
+  final String code;
 
   EmojiHistoryItem({
     required this.name,
     required this.character,
-    required this.unicodeName,
+    required this.code,
   });
 
   factory EmojiHistoryItem.fromJson(Map<String, dynamic> json) {
     return EmojiHistoryItem(
       name: json['name'] ?? '',
       character: json['character'] ?? '',
-      unicodeName: json['unicode_name'] ?? '',
+      code: json['code'] ?? '',
     );
   }
 }
